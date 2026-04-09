@@ -396,6 +396,7 @@ func TestRun_EmptyLines(t *testing.T) {
 
 func TestRun_ContextCanceled(t *testing.T) {
 	r, w := io.Pipe()
+	defer w.Close()
 	out := &bytes.Buffer{}
 	ctx, cancel := context.WithCancel(context.Background())
 
@@ -407,7 +408,6 @@ func TestRun_ContextCanceled(t *testing.T) {
 	}()
 
 	cancel()
-	w.Close() // unblock the scanner goroutine
 
 	err := <-done
 	require.ErrorIs(t, err, context.Canceled)
