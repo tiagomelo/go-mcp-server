@@ -4,6 +4,8 @@ A sample [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) server
 
 No third-party MCP libraries -- just the standard library and the MCP specification.
 
+Article: https://tiagomelo.info/golang/mcp/2026/04/10/go-mcp-server.html
+
 ## Available tools
 
 | Tool | Description |
