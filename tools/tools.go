@@ -21,7 +21,7 @@ func RegisterDefaultTools(s *server.Server) {
 	s.RegisterTool(
 		server.ToolDefinition{
 			Name:        "hello_world",
-			Description: "Returns a hello message for the provided name.",
+			Description: "Generate a greeting message for a given name. Use this when the user asks to greet someone, say hello, or produce a simple greeting.",
 			InputSchema: map[string]any{
 				"type": "object",
 				"properties": map[string]any{
@@ -46,7 +46,7 @@ func RegisterDefaultTools(s *server.Server) {
 	s.RegisterTool(
 		server.ToolDefinition{
 			Name:        "health_check",
-			Description: "Performs an HTTP GET against a URL and returns status code and latency.",
+			Description: "Check the health of a URL by performing an HTTP GET request. Use this when the user asks if a website or API is up, reachable, or responding correctly. Returns status code and latency.",
 			InputSchema: map[string]any{
 				"type": "object",
 				"properties": map[string]any{
@@ -74,7 +74,7 @@ func RegisterDefaultTools(s *server.Server) {
 	s.RegisterTool(
 		server.ToolDefinition{
 			Name:        "latency_percentiles",
-			Description: "Computes min, p50, p95, p99, max and average for a list of numeric values.",
+			Description: "Compute latency statistics (min, p50, p95, p99, max, average) from a list of numeric values. Use this when the user asks to analyze latencies, response times, or distribution of performance metrics.",
 			InputSchema: map[string]any{
 				"type": "object",
 				"properties": map[string]any{

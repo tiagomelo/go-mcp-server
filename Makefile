@@ -27,3 +27,9 @@ coverage:
 ## run: run the MCP server
 run:
 	@ cat | go run cmd/main.go
+
+.PHONY: build
+## build: build the MCP server binary
+build:
+	@ go build -o bin/mcp-server cmd/main.go
+	@ echo "Built mcp-server binary in $(PWD)/bin/mcp-server"
