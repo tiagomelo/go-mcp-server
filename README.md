@@ -1,5 +1,7 @@
 # go-mcp-server
 
+[![CI](https://github.com/tiagomelo/go-mcp-server/actions/workflows/ci.yml/badge.svg)](https://github.com/tiagomelo/go-mcp-server/actions/workflows/ci.yml) [![Go Reference](https://pkg.go.dev/badge/github.com/tiagomelo/go-mcp-server.svg)](https://pkg.go.dev/github.com/tiagomelo/go-mcp-server)
+
 A sample [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) server implemented in [Go](https://go.dev/) from scratch, using [JSON-RPC 2.0](https://www.jsonrpc.org/specification) over stdio.
 
 No third-party MCP libraries -- just the standard library and the MCP specification.
